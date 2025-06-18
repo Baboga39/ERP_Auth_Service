@@ -5,7 +5,6 @@ const privateKey = Buffer.from(process.env.JWT_PRIVATE_KEY_BASE64, 'base64').toS
 const publicKey = Buffer.from(process.env.JWT_PUBLIC_KEY_BASE64, 'base64').toString('utf8');
 
 exports.signAccessToken = (payload) => {
-  logger.debug(privateKey)
   return jwt.sign(payload, privateKey, {
     algorithm: 'RS256',
     expiresIn: process.env.ACCESS_TOKEN_EXPIRES_IN,

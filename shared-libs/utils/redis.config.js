@@ -1,4 +1,3 @@
-// shared-libs/utils/redis.config.js
 const { createClient } = require('redis');
 
 const redis = createClient({

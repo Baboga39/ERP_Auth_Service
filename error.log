@@ -1,0 +1,3 @@
+[2025-06-18 13:11:37] error (api-auth): [POST] /auth/login → 429: Too many failed login attempts. Please try again after 5 minutes. Too many failed login attempts. Please try again after 5 minutes.
+[2025-06-18 13:11:38] error (api-auth): [POST] /auth/login → 429: Too many failed login attempts. Please try again after 5 minutes. Too many failed login attempts. Please try again after 5 minutes.
+[2025-06-18 13:11:39] error (api-auth): [POST] /auth/login → 429: Too many failed login attempts. Please try again after 5 minutes. Too many failed login attempts. Please try again after 5 minutes.

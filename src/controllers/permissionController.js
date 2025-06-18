@@ -5,7 +5,6 @@ const logger = require('../utils/logger');
 exports.getPermissionsByRoleId = async (req, res, next) => {
   try {
     const { roleId } = req.params;
-    logger.debug('Role id', roleId );
     const permissions = await service.permissionService.getPermissionsByRoleId(roleId);
     return ok(res, permissions, 'Get Permissions successfully');
   } catch (err) {
@@ -15,7 +14,6 @@ exports.getPermissionsByRoleId = async (req, res, next) => {
 
 exports.getAllPermissions = async (req, res, next) => {
   try {
-    logger.debug('Fetching all permissions');
     const permissions = await service.permissionService.getAllPermissions();
     return ok(res, permissions, 'Get All Permissions successfully');
   } catch (err) {
