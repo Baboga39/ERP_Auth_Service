@@ -1,0 +1,7 @@
+[2025-06-18 09:31:11] error (api-auth): [POST] /auth/login → 500: secretOrPrivateKey must be an asymmetric key when using RS256 secretOrPrivateKey must be an asymmetric key when using RS256
+[2025-06-18 09:32:27] error (api-auth): [POST] /auth/login → 500: secretOrPrivateKey must be an asymmetric key when using RS256 secretOrPrivateKey must be an asymmetric key when using RS256
+[2025-06-18 09:32:42] error (api-auth): [POST] /auth/login → 500: secretOrPrivateKey must be an asymmetric key when using RS256 secretOrPrivateKey must be an asymmetric key when using RS256
+[2025-06-18 09:36:45] error (api-auth): [POST] /auth/login → 500: secretOrPrivateKey must be an asymmetric key when using RS256 secretOrPrivateKey must be an asymmetric key when using RS256
+[2025-06-18 09:38:31] error (api-auth): [POST] /auth/login → 500: secretOrPrivateKey must be an asymmetric key when using RS256 secretOrPrivateKey must be an asymmetric key when using RS256
+[2025-06-18 09:51:39] error (api-auth): [POST] /auth/login → 500: secretOrPrivateKey must be an asymmetric key when using RS256 secretOrPrivateKey must be an asymmetric key when using RS256
+[2025-06-18 10:07:25] error (api-auth): [POST] /auth/login → 500: secretOrPrivateKey must be an asymmetric key when using RS256 secretOrPrivateKey must be an asymmetric key when using RS256

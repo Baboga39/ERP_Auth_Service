@@ -1,0 +1,55 @@
+// schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+model User {
+  id        Int       @id @default(autoincrement())
+  email     String    @unique
+  password  String
+  roleId    Int?
+  role      Role?     @relation(fields: [roleId], references: [id], onDelete: SetNull) // Khi role bị xóa, roleId = null
+  sessions  Session[]
+  createdAt DateTime  @default(now())
+}
+
+model Role {
+  id          Int               @id @default(autoincrement())
+  name        String            @unique
+  users       User[]
+  permissions RolePermission[]
+}
+
+model Permission {
+  id        Int     @id @default(autoincrement())
+  resource  String
+  action    String
+  roles     RolePermission[]
+}
+
+model RolePermission {
+  id           Int        @id @default(autoincrement())
+  roleId       Int
+  permissionId Int
+  role         Role       @relation(fields: [roleId], references: [id], onDelete: Cascade)
+  permission   Permission @relation(fields: [permissionId], references: [id], onDelete: Cascade)
+  @@unique([roleId, permissionId])
+}
+
+
+model Session {
+  id           Int      @id @default(autoincrement())
+  userId       Int
+  deviceId     String?
+  ipAddress    String?
+  userAgent    String?
+  refreshToken String   @unique
+  createdAt    DateTime @default(now())
+  expiresAt    DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade) // Xóa user sẽ xóa luôn session
+}
