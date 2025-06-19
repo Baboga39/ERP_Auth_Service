@@ -2,7 +2,7 @@ const argon2 = require("argon2");
 const prisma = require("../utils/db");
 
 const CustomError = require("../../shared-libs/errors/CustomError");
-const { existingRole } = require("./RoleService");
+const { existingRole, existingRoleById } = require("./RoleService");
 const logger = require("../utils/logger");
 class PermissionService {
   async getPermissionsByRoleId(roleId) {
@@ -39,6 +39,14 @@ class PermissionService {
       },
     });
   }
+
+  async upSertPermission(id, resource, action) {
+    if (id) {
+      await this.existingPermissionId(id);
+      return await this.updatePermission(id, resource, action);
+    }
+    return await this.addPermission(resource, action);
+  }
   async addPermission(resource, action) {
     if (await this.existingPermission(resource, action)) {
       throw new CustomError("Permission already exists", 400);
@@ -49,10 +57,16 @@ class PermissionService {
     });
   }
 
-  async existingPermission(resource, action) {
-    return await prisma.permission.findUnique({
-      where: { resource_action: { resource, action } },
+  async existingPermissionById(id) {
+    const permission = await prisma.permission.findUnique({
+      where: { id: parseInt(id, 10) },
     });
+
+    if (!permission) {
+      throw new CustomError("Permission not found", 404);
+    }
+
+    return permission;
   }
 
   async updatePermission(id, resource, action) {
@@ -75,44 +89,55 @@ class PermissionService {
   }
 
   async deletePermission(id) {
-    const existingPermission = await prisma.permission.findUnique({
-      where: { id: parseInt(id, 10) },
-    });
-
-    if (!existingPermission) {
-      throw new CustomError("Permission not found", 404);
-    }
+    await this.existingPermissionId(id);
 
     return await prisma.permission.delete({
       where: { id: parseInt(id, 10) },
     });
   }
-  async addPermissionToRole(roleId, permissionId) {
-    await existingRole(roleId);
 
-    await this.existingPermission(permissionId);
+  async existingPermissionId(permissionId) {
+    const permission = await prisma.permission.findUnique({
+      where: { id: parseInt(permissionId, 10) },
+    });
+    logger.debug(
+      `Checking if permission with ID ${permissionId} exists: ${!!permission}`
+    );
+
+    if (!permission) {
+      throw new CustomError("Permission not found", 404);
+    }
+
+    return permission;
+  }
+
+  async addPermissionsToRole(roleId, permissionIds) {
+    await existingRoleById(roleId);
+
+    await Promise.all(
+      permissionIds.map((id) => this.existingPermissionById(id))
+    );
 
     return await prisma.role.update({
       where: { id: parseInt(roleId, 10) },
       data: {
         permissions: {
-          connect: { id: parseInt(permissionId, 10) },
+          connect: permissionIds.map((id) => ({ id: parseInt(id, 10) })),
         },
       },
     });
   }
+  async removePermissionsFromRole(roleId, permissionIds) {
+    await existingRoleById(roleId);
 
-  async removePermissionFromRole(roleId, permissionId) {
-    await existingRole(roleId);
+    await Promise.all(
+      permissionIds.map((id) => this.existingPermissionById(id))
+    );
 
-    await this.existingPermission(permissionId);
-
-    return await prisma.role.update({
-      where: { id: parseInt(roleId, 10) },
-      data: {
-        permissions: {
-          disconnect: { id: parseInt(permissionId, 10) },
-        },
+    return await prisma.rolePermission.deleteMany({
+      where: {
+        roleId: parseInt(roleId, 10),
+        permissionId: { in: permissionIds.map((id) => parseInt(id, 10)) },
       },
     });
   }

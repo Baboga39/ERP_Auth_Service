@@ -1,3 +1,397 @@
 [2025-06-18 13:11:37] error (api-auth): [POST] /auth/login → 429: Too many failed login attempts. Please try again after 5 minutes. Too many failed login attempts. Please try again after 5 minutes.
 [2025-06-18 13:11:38] error (api-auth): [POST] /auth/login → 429: Too many failed login attempts. Please try again after 5 minutes. Too many failed login attempts. Please try again after 5 minutes.
 [2025-06-18 13:11:39] error (api-auth): [POST] /auth/login → 429: Too many failed login attempts. Please try again after 5 minutes. Too many failed login attempts. Please try again after 5 minutes.
+[2025-06-18 13:52:52] error (api-auth): [POST] /auth/refresh-token → 403: Invalid or expired token Invalid or expired token
+[2025-06-18 13:53:09] error (api-auth): [POST] /auth/refresh-token → 403: Invalid or expired token Invalid or expired token
+[2025-06-18 13:53:30] error (api-auth): [POST] /auth/refresh-token → 403: Invalid or expired token Invalid or expired token
+[2025-06-18 13:54:59] error (api-auth): [POST] /auth/refresh-token → 403: Invalid or expired token Invalid or expired token
+[2025-06-18 13:56:38] error (api-auth): [POST] /auth/refresh-token → 403: Invalid or expired token Invalid or expired token
+[2025-06-18 13:57:03] error (api-auth): [POST] /auth/refresh-token → 403: Invalid or expired token Invalid or expired token
+[2025-06-18 13:57:56] error (api-auth): [POST] /auth/refresh-token → 403: Invalid or expired token Invalid or expired token
+[2025-06-18 13:59:18] error (api-auth): [POST] /auth/refresh-token → 403: Invalid or expired token Invalid or expired token
+[2025-06-18 13:59:43] error (api-auth): [POST] /auth/refresh-token → 403: Invalid or expired token Invalid or expired token
+[2025-06-18 14:00:04] error (api-auth): [POST] /auth/refresh-token → 403: Invalid or expired token Invalid or expired token
+[2025-06-18 15:38:11] error (api-auth): [POST] /auth/permissions/upSert → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-18 15:40:26] error (api-auth): [POST] /auth/permissions/upSert → 500: 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:114:48
+
+  111 }
+  112 
+  113 async existingPermission(permissionId) {
+→ 114   const permission = await prisma.permission.findUnique({
+          where: {
+        +   id: Int
+          }
+        })
+
+Argument `id` is missing. 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:114:48
+
+  111 }
+  112 
+  113 async existingPermission(permissionId) {
+→ 114   const permission = await prisma.permission.findUnique({
+          where: {
+        +   id: Int
+          }
+        })
+
+Argument `id` is missing.
+[2025-06-18 15:41:31] error (api-auth): [POST] /auth/permissions/upSert → 500: 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:115:48
+
+  112 }
+  113 
+  114 async existingPermission(permissionId) {
+→ 115   const permission = await prisma.permission.findUnique({
+          where: {
+        +   id: Int
+          }
+        })
+
+Argument `id` is missing. 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:115:48
+
+  112 }
+  113 
+  114 async existingPermission(permissionId) {
+→ 115   const permission = await prisma.permission.findUnique({
+          where: {
+        +   id: Int
+          }
+        })
+
+Argument `id` is missing.
+[2025-06-18 15:42:45] error (api-auth): [POST] /auth/permissions/upSert → 500: 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:115:48
+
+  112 }
+  113 
+  114 async existingPermission(permissionId) {
+→ 115   const permission = await prisma.permission.findUnique({
+          where: {
+        +   id: Int
+          }
+        })
+
+Argument `id` is missing. 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:115:48
+
+  112 }
+  113 
+  114 async existingPermission(permissionId) {
+→ 115   const permission = await prisma.permission.findUnique({
+          where: {
+        +   id: Int
+          }
+        })
+
+Argument `id` is missing.
+[2025-06-18 15:43:52] error (api-auth): [POST] /auth/permissions/upSert → 500: 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:115:48
+
+  112 }
+  113 
+  114 async existingPermission(permissionId) {
+→ 115   const permission = await prisma.permission.findUnique({
+          where: {
+        +   id: Int
+          }
+        })
+
+Argument `id` is missing. 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:115:48
+
+  112 }
+  113 
+  114 async existingPermission(permissionId) {
+→ 115   const permission = await prisma.permission.findUnique({
+          where: {
+        +   id: Int
+          }
+        })
+
+Argument `id` is missing.
+[2025-06-18 15:45:33] error (api-auth): [POST] /auth/permissions/upSert → 500: 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:115:48
+
+  112 }
+  113 
+  114 async existingPermission(permissionId) {
+→ 115   const permission = await prisma.permission.findUnique({
+          where: {
+        +   id: Int
+          }
+        })
+
+Argument `id` is missing. 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:115:48
+
+  112 }
+  113 
+  114 async existingPermission(permissionId) {
+→ 115   const permission = await prisma.permission.findUnique({
+          where: {
+        +   id: Int
+          }
+        })
+
+Argument `id` is missing.
+[2025-06-18 15:46:46] error (api-auth): [POST] /auth/permissions/upSert → 500: 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:62:36
+
+  59 }
+  60 
+  61 async existingPermission(resource, action) {
+→ 62   return await prisma.permission.findUnique({
+         where: {
+           resource_action: {
+           ~~~~~~~~~~~~~~~
+             resource: "Guest",
+             action: "Guest"
+           },
+       ?   id?: Int,
+       ?   AND?: PermissionWhereInput | PermissionWhereInput[],
+       ?   OR?: PermissionWhereInput[],
+       ?   NOT?: PermissionWhereInput | PermissionWhereInput[],
+       ?   resource?: StringFilter | String,
+       ?   action?: StringFilter | String,
+       ?   roles?: RolePermissionListRelationFilter
+         }
+       })
+
+Unknown argument `resource_action`. Available options are marked with ?. 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:62:36
+
+  59 }
+  60 
+  61 async existingPermission(resource, action) {
+→ 62   return await prisma.permission.findUnique({
+         where: {
+           resource_action: {
+           ~~~~~~~~~~~~~~~
+             resource: "Guest",
+             action: "Guest"
+           },
+       ?   id?: Int,
+       ?   AND?: PermissionWhereInput | PermissionWhereInput[],
+       ?   OR?: PermissionWhereInput[],
+       ?   NOT?: PermissionWhereInput | PermissionWhereInput[],
+       ?   resource?: StringFilter | String,
+       ?   action?: StringFilter | String,
+       ?   roles?: RolePermissionListRelationFilter
+         }
+       })
+
+Unknown argument `resource_action`. Available options are marked with ?.
+[2025-06-18 15:47:55] error (api-auth): [POST] /auth/permissions/upSert → 500: 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:62:36
+
+  59 }
+  60 
+  61 async existingPermission(resource, action) {
+→ 62   return await prisma.permission.findUnique({
+         where: {
+           resource: "Guest",
+           action: "Guest",
+       ?   id?: Int,
+       ?   AND?: PermissionWhereInput | PermissionWhereInput[],
+       ?   OR?: PermissionWhereInput[],
+       ?   NOT?: PermissionWhereInput | PermissionWhereInput[],
+       ?   roles?: RolePermissionListRelationFilter
+         }
+       })
+
+Argument `where` of type PermissionWhereUniqueInput needs at least one of `id` arguments. Available options are marked with ?. 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:62:36
+
+  59 }
+  60 
+  61 async existingPermission(resource, action) {
+→ 62   return await prisma.permission.findUnique({
+         where: {
+           resource: "Guest",
+           action: "Guest",
+       ?   id?: Int,
+       ?   AND?: PermissionWhereInput | PermissionWhereInput[],
+       ?   OR?: PermissionWhereInput[],
+       ?   NOT?: PermissionWhereInput | PermissionWhereInput[],
+       ?   roles?: RolePermissionListRelationFilter
+         }
+       })
+
+Argument `where` of type PermissionWhereUniqueInput needs at least one of `id` arguments. Available options are marked with ?.
+[2025-06-18 15:54:11] error (api-auth): [POST] /auth/permissions/upSert → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-18 15:54:20] error (api-auth): [POST] /auth/permissions/upSert → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-18 15:54:48] error (api-auth): [POST] /auth/permissions/upSert → 400: Permission already exists Permission already exists
+[2025-06-18 15:55:01] error (api-auth): [POST] /auth/permissions/upSert → 404: Permission not found Permission not found
+[2025-06-18 15:55:06] error (api-auth): [POST] /auth/permissions/upSert → 400: Permission already exists Permission already exists
+[2025-06-18 15:59:45] error (api-auth): [POST] /auth/permissions/upSert → 400: The same permission The same permission
+[2025-06-18 16:18:57] error (api-auth): [DELETE] /auth/permissions/35 → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-18 16:37:57] error (api-auth): [DELETE] /auth/permissions/35 → 401: Not authenticated Not authenticated
+[2025-06-18 16:38:22] error (api-auth): [DELETE] /auth/permissions/:id → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-18 16:46:34] error (api-auth): [DELETE] /auth/permissions/35 → 404: Permission not found Permission not found
+[2025-06-18 16:50:59] error (api-auth): [DELETE] /auth/permissions/34 → 404: Permission not found Permission not found
+[2025-06-18 20:14:07] error (api-auth): [DELETE] /auth/permissions/34 → 500: INVALID_MIDDLEWARE_USAGE INVALID_MIDDLEWARE_USAGE
+[2025-06-19 13:45:47] error (api-auth): [POST] /auth/permissions/addToRole → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-19 13:47:12] error (api-auth): [POST] /auth/permissions/addToRole → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-19 13:47:36] error (api-auth): [POST] /auth/permissions/addToRole → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-19 13:48:13] error (api-auth): [POST] /auth/permissions/addToRole → 500: permissionId is not defined permissionId is not defined
+[2025-06-19 13:48:36] error (api-auth): [POST] /auth/permissions/addToRole → 500: 
+Invalid `prisma.role.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\RoleService.js:114:44
+
+  111 }
+  112 
+  113 async existingRole(name) {
+→ 114   const existingRole = await prisma.role.findUnique({
+          where: {
+            name: 1
+                  ~
+          }
+        })
+
+Argument `name`: Invalid value provided. Expected String, provided Int. 
+Invalid `prisma.role.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\RoleService.js:114:44
+
+  111 }
+  112 
+  113 async existingRole(name) {
+→ 114   const existingRole = await prisma.role.findUnique({
+          where: {
+            name: 1
+                  ~
+          }
+        })
+
+Argument `name`: Invalid value provided. Expected String, provided Int.
+[2025-06-19 13:51:43] error (api-auth): [POST] /auth/permissions/addToRole → 404: Role not found Role not found
+[2025-06-19 13:55:01] error (api-auth): [POST] /auth/roles/upSert → 401: Not authenticated Not authenticated
+[2025-06-19 13:55:23] error (api-auth): [POST] /auth/roles/upSert → 400: Role already exists Role already exists
+[2025-06-19 13:55:31] error (api-auth): [POST] /auth/roles/upSert → 400: Role already exists Role already exists
+[2025-06-19 13:56:25] error (api-auth): [POST] /auth/roles/upSert → 400: Role already exists Role already exists
+[2025-06-19 13:57:43] error (api-auth): [POST] /auth/roles/upSert → 400: Role already exists Role already exists
+[2025-06-19 13:59:10] error (api-auth): [POST] /auth/permissions/addToRole → 500: 
+Invalid `prisma.permission.findFirst()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:61:56
+
+  58 }
+  59 
+  60 async existingPermission(resource, action) {
+→ 61   const existingPermission = await prisma.permission.findFirst({
+         where: {
+           resource: 1,
+                     ~
+           action: undefined
+         }
+       })
+
+Argument `resource`: Invalid value provided. Expected StringFilter or String, provided Int. 
+Invalid `prisma.permission.findFirst()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:61:56
+
+  58 }
+  59 
+  60 async existingPermission(resource, action) {
+→ 61   const existingPermission = await prisma.permission.findFirst({
+         where: {
+           resource: 1,
+                     ~
+           action: undefined
+         }
+       })
+
+Argument `resource`: Invalid value provided. Expected StringFilter or String, provided Int.
+[2025-06-19 14:12:46] error (api-auth): [POST] /auth/roles/upSert → 400: Role already exists Role already exists
+[2025-06-19 14:12:50] error (api-auth): [POST] /auth/roles/upSert → 400: Role already exists Role already exists
+[2025-06-19 14:13:35] error (api-auth): [POST] /auth/permissions/addToRole → 500: 
+Invalid `prisma.permission.findFirst()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:61:56
+
+  58 }
+  59 
+  60 async existingPermission(resource, action) {
+→ 61   const existingPermission = await prisma.permission.findFirst({
+         where: {
+           resource: 1,
+                     ~
+           action: undefined
+         }
+       })
+
+Argument `resource`: Invalid value provided. Expected StringFilter or String, provided Int. 
+Invalid `prisma.permission.findFirst()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:61:56
+
+  58 }
+  59 
+  60 async existingPermission(resource, action) {
+→ 61   const existingPermission = await prisma.permission.findFirst({
+         where: {
+           resource: 1,
+                     ~
+           action: undefined
+         }
+       })
+
+Argument `resource`: Invalid value provided. Expected StringFilter or String, provided Int.
+[2025-06-19 14:22:22] error (api-auth): [POST] /auth/permissions/addToRole → 404: Permission not found Permission not found
+[2025-06-19 14:28:17] error (api-auth): [GET] /auth/permissions/all → 500: 
+Invalid `prisma.permission.findMany()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:34:36
+
+  31 }
+  32 
+  33 async getAllPermissions() {
+→ 34   return await prisma.permission.findMany(
+Can't reach database server at `ep-misty-glade-a1vja2sw-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-misty-glade-a1vja2sw-pooler.ap-southeast-1.aws.neon.tech:5432`. 
+Invalid `prisma.permission.findMany()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:34:36
+
+  31 }
+  32 
+  33 async getAllPermissions() {
+→ 34   return await prisma.permission.findMany(
+Can't reach database server at `ep-misty-glade-a1vja2sw-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-misty-glade-a1vja2sw-pooler.ap-southeast-1.aws.neon.tech:5432`.
+[2025-06-19 14:30:34] error (api-auth): [DELETE] /auth/permissions/removeFromRole → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-19 14:30:37] error (api-auth): [DELETE] /auth/permissions/removeFromRole → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-19 14:31:02] error (api-auth): [DELETE] /auth/permissions/removeFromRole → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-19 14:31:05] error (api-auth): [DELETE] /auth/permissions/removeFromRole → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-19 14:31:32] error (api-auth): [DELETE] /auth/permissions/removeFromRole → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-19 14:36:45] error (api-auth): [POST] /auth/permissions/removeFromRole → 500: this.existingPermission is not a function this.existingPermission is not a function
+[2025-06-19 14:37:50] error (api-auth): [POST] /auth/permissions/removeFromRole → 500: 
+Invalid `prisma.role.update()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:133:30
+
+  130 
+  131 await Promise.all(permissionIds.map((id) => this.existingPermissionById(id)));
+  132 
+→ 133 return await prisma.role.update(
+The change you are trying to make would violate the required relation 'RoleToRolePermission' between the `RolePermission` and `Role` models. 
+Invalid `prisma.role.update()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:133:30
+
+  130 
+  131 await Promise.all(permissionIds.map((id) => this.existingPermissionById(id)));
+  132 
+→ 133 return await prisma.role.update(
+The change you are trying to make would violate the required relation 'RoleToRolePermission' between the `RolePermission` and `Role` models.

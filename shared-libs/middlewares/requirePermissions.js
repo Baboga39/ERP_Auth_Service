@@ -1,42 +1,69 @@
-// shared-libs/middlewares/requirePermissions.js
 
-const CustomError = require('../errors/CustomError');
+const logger = require("../../src/utils/logger");
+const CustomError = require("../errors/CustomError");
 
 
-function requirePermissions(requiredPermissions = []) {
+function requirePermissions(requiredPermissions) {
+  if (
+    requiredPermissions !== undefined &&
+    !Array.isArray(requiredPermissions)
+  ) {
+    throw new CustomError(
+      "INVALID_MIDDLEWARE_USAGE",
+      500,
+      "requirePermissions must be called with an array of permission strings, or with no arguments for admin-only."
+    );
+  }
+
+  const perms = Array.isArray(requiredPermissions) ? requiredPermissions : [];
+
   return (req, res, next) => {
-    const rawPerms = req.headers['x-permissions'];
+    const role = req.headers["x-role-id"];
+    const rawPerms = req.headers["x-permissions"];
+
+    logger.debug(
+      `Checking permissions for user ${
+        req.headers["x-user-id"]
+      } (role=${role}), requiredPerms=[${perms.join(", ")}]`
+    );
+
+    // Admins always pass
+    if (role === "5") {
+      return next();
+    }
+
+    if (perms.length === 0) {
+      return next(
+        new CustomError(
+          "PERMISSION_DENIED",
+          403,
+          "Admin role required to access this resource."
+        )
+      );
+    }
+
     if (!rawPerms) {
-      return next(new CustomError('MISSING_PERMISSIONS_HEADER', 403, 'Missing x-permissions header'));
-    }
-    const role = req.headers['x-role-id']
-    if(role === '5') {
-      return next(); // Admins are exempt from permission checks
-    }
-
-    const userPermissions = rawPerms.split(',').map(p => p.trim());
-
-    const hasAtLeastOnePermission = requiredPermissions.some(p => userPermissions.includes(p));
-
-    if (!hasAtLeastOnePermission && role !== '5') {
       return next(
         new CustomError(
-          'PERMISSION_DENIED',
+          "MISSING_PERMISSIONS_HEADER",
           403,
-          'Required admin role to access this resource.'
+          "Missing x-permissions header."
         )
       );
-    } 
-    
-    if (!hasAtLeastOnePermission) {
+    }
+
+    const userPermissions = rawPerms.split(",").map((p) => p.trim());
+    const hasAny = perms.some((p) => userPermissions.includes(p));
+
+    if (!hasAny) {
       return next(
         new CustomError(
-          'PERMISSION_DENIED',
+          "PERMISSION_DENIED",
           403,
-          `Required at least one of: [${requiredPermissions.join(', ')}]`
+          `At least one of these permissions is required: [${perms.join(", ")}]`
         )
       );
-    } 
+    }
 
     next();
   };

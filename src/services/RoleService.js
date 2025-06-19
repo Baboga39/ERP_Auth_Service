@@ -1,5 +1,6 @@
 const prisma = require("../utils/db");
 const CustomError = require("../../shared-libs/errors/CustomError");
+const logger = require("../utils/logger");
 class SessionService {
   async getAllRolesAndPermissions() {
     const roles = await prisma.role.findMany({
@@ -38,9 +39,7 @@ class SessionService {
   }
 
   async addRoleWithPermissions(name, permissions) {
-    if (this.existingRole(name)) {
-      throw new CustomError("Role already exists", 400);
-    }
+    await this.existingRole(name);
 
     if (!permissions || permissions.length === 0) {
       await this.create(name);
@@ -72,10 +71,9 @@ class SessionService {
   }
 
   async updateRole(id, name) {
-    if (!this.existingRole(name)) {
-      throw new CustomError("Role already exists", 400);
-    }
+    await this.existingRoleById(id);
 
+    await this.existingRole(name);
     const updatedRole = await prisma.role.update({
       where: { id },
       data: { name },
@@ -98,7 +96,7 @@ class SessionService {
     return role;
   }
 
-  async findById(id) {
+  async existingRoleById(id) {
     const role = await prisma.role.findUnique({
       where: { id },
     });
@@ -111,11 +109,11 @@ class SessionService {
   }
 
   async existingRole(name) {
-    const existingRole = await prisma.role.findUnique({
+    const checkExistingRole = await prisma.role.findUnique({
       where: { name },
     });
 
-    if (existingRole) {
+    if (checkExistingRole) {
       throw new CustomError("Role already exists", 400);
     }
 

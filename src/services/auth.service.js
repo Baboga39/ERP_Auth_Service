@@ -30,13 +30,6 @@ class AuthService {
     where: { email },
     include: { 
       role: {
-        include: {
-          permissions: {
-            include: {
-              permission: true
-            }
-          }
-        }
       }
     }
   });
@@ -45,9 +38,6 @@ class AuthService {
     throw new CustomError("Incorrect email or password", 401);
   }
 
-  // const permissions = user.role 
-  //   ? user.role.permissions.map(rp => `${rp.permission.resource}:${rp.permission.action}`)
-  //   : [];
 
   const payload = {
     id: user.id,
@@ -55,9 +45,10 @@ class AuthService {
   };
 
   const accessToken = signAccessToken(payload);
-  const refreshToken = signRefreshToken(payload);
 
-  await createSession(user.id, ipAddress, userAgent);
+  const session  = await createSession(user.id, ipAddress, userAgent);
+  const refreshToken =session.refreshToken; ;
+
 
   return { accessToken, refreshToken };
 }

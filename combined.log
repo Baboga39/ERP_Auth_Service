@@ -194,3 +194,602 @@ ptwxEL8kQB6XyiUkV0jtt3D5
 [2025-06-18 13:12:02] info (api-auth): Auth Service running on port 5000
 [2025-06-18 13:12:07] info (api-auth): Auth Service running on port 5000
 [2025-06-18 13:12:16] info (api-auth): Auth Service running on port 5000
+[2025-06-18 13:51:46] info (api-auth): Auth Service running on port 5000
+[2025-06-18 13:52:04] info (api-auth): Auth Service running on port 5000
+[2025-06-18 13:52:52] error (api-auth): [POST] /auth/refresh-token → 403: Invalid or expired token Invalid or expired token
+[2025-06-18 13:53:09] error (api-auth): [POST] /auth/refresh-token → 403: Invalid or expired token Invalid or expired token
+[2025-06-18 13:53:30] error (api-auth): [POST] /auth/refresh-token → 403: Invalid or expired token Invalid or expired token
+[2025-06-18 13:54:59] error (api-auth): [POST] /auth/refresh-token → 403: Invalid or expired token Invalid or expired token
+[2025-06-18 13:56:38] error (api-auth): [POST] /auth/refresh-token → 403: Invalid or expired token Invalid or expired token
+[2025-06-18 13:57:01] info (api-auth): Auth Service running on port 5000
+[2025-06-18 13:57:03] debug (api-auth): Session found: null
+[2025-06-18 13:57:03] error (api-auth): [POST] /auth/refresh-token → 403: Invalid or expired token Invalid or expired token
+[2025-06-18 13:57:10] info (api-auth): Auth Service running on port 5000
+[2025-06-18 13:57:56] error (api-auth): [POST] /auth/refresh-token → 403: Invalid or expired token Invalid or expired token
+[2025-06-18 13:59:18] error (api-auth): [POST] /auth/refresh-token → 403: Invalid or expired token Invalid or expired token
+[2025-06-18 13:59:35] info (api-auth): Auth Service running on port 5000
+[2025-06-18 13:59:43] info (api-auth): 🔄 Refreshing token for user ID: 45
+[2025-06-18 13:59:43] error (api-auth): [POST] /auth/refresh-token → 403: Invalid or expired token Invalid or expired token
+[2025-06-18 13:59:59] info (api-auth): Auth Service running on port 5000
+[2025-06-18 14:00:04] info (api-auth): 🔄 Refreshing token for user ID: null
+[2025-06-18 14:00:04] error (api-auth): [POST] /auth/refresh-token → 403: Invalid or expired token Invalid or expired token
+[2025-06-18 14:02:03] info (api-auth): Auth Service running on port 5000
+[2025-06-18 14:02:31] info (api-auth): 🔄 Refreshing token for user ID: [object Object]
+[2025-06-18 14:08:41] info (api-auth): Auth Service running on port 5000
+[2025-06-18 14:30:17] info (api-auth): Auth Service running on port 5000
+[2025-06-18 14:30:58] info (api-auth): Auth Service running on port 5000
+[2025-06-18 14:31:14] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:05:29] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:05:48] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:06:05] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:08:03] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:08:19] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:10:30] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:37:07] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:38:11] error (api-auth): [POST] /auth/permissions/upSert → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-18 15:40:26] error (api-auth): [POST] /auth/permissions/upSert → 500: 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:114:48
+
+  111 }
+  112 
+  113 async existingPermission(permissionId) {
+→ 114   const permission = await prisma.permission.findUnique({
+          where: {
+        +   id: Int
+          }
+        })
+
+Argument `id` is missing. 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:114:48
+
+  111 }
+  112 
+  113 async existingPermission(permissionId) {
+→ 114   const permission = await prisma.permission.findUnique({
+          where: {
+        +   id: Int
+          }
+        })
+
+Argument `id` is missing.
+[2025-06-18 15:41:29] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:41:31] error (api-auth): [POST] /auth/permissions/upSert → 500: 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:115:48
+
+  112 }
+  113 
+  114 async existingPermission(permissionId) {
+→ 115   const permission = await prisma.permission.findUnique({
+          where: {
+        +   id: Int
+          }
+        })
+
+Argument `id` is missing. 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:115:48
+
+  112 }
+  113 
+  114 async existingPermission(permissionId) {
+→ 115   const permission = await prisma.permission.findUnique({
+          where: {
+        +   id: Int
+          }
+        })
+
+Argument `id` is missing.
+[2025-06-18 15:41:42] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:42:43] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:42:45] info (api-auth): NaN
+[2025-06-18 15:42:45] error (api-auth): [POST] /auth/permissions/upSert → 500: 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:115:48
+
+  112 }
+  113 
+  114 async existingPermission(permissionId) {
+→ 115   const permission = await prisma.permission.findUnique({
+          where: {
+        +   id: Int
+          }
+        })
+
+Argument `id` is missing. 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:115:48
+
+  112 }
+  113 
+  114 async existingPermission(permissionId) {
+→ 115   const permission = await prisma.permission.findUnique({
+          where: {
+        +   id: Int
+          }
+        })
+
+Argument `id` is missing.
+[2025-06-18 15:43:50] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:43:51] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:43:52] info (api-auth): Upserting permission: Guest - Guest ID: new
+[2025-06-18 15:43:52] info (api-auth): NaN
+[2025-06-18 15:43:52] error (api-auth): [POST] /auth/permissions/upSert → 500: 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:115:48
+
+  112 }
+  113 
+  114 async existingPermission(permissionId) {
+→ 115   const permission = await prisma.permission.findUnique({
+          where: {
+        +   id: Int
+          }
+        })
+
+Argument `id` is missing. 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:115:48
+
+  112 }
+  113 
+  114 async existingPermission(permissionId) {
+→ 115   const permission = await prisma.permission.findUnique({
+          where: {
+        +   id: Int
+          }
+        })
+
+Argument `id` is missing.
+[2025-06-18 15:44:53] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:45:12] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:45:24] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:45:30] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:45:32] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:45:33] debug (api-auth): Upserting permission: Guest - Guest ID: undefined
+[2025-06-18 15:45:33] error (api-auth): [POST] /auth/permissions/upSert → 500: 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:115:48
+
+  112 }
+  113 
+  114 async existingPermission(permissionId) {
+→ 115   const permission = await prisma.permission.findUnique({
+          where: {
+        +   id: Int
+          }
+        })
+
+Argument `id` is missing. 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:115:48
+
+  112 }
+  113 
+  114 async existingPermission(permissionId) {
+→ 115   const permission = await prisma.permission.findUnique({
+          where: {
+        +   id: Int
+          }
+        })
+
+Argument `id` is missing.
+[2025-06-18 15:46:30] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:46:42] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:46:45] debug (api-auth): Upserting permission: Guest - Guest ID: undefined
+[2025-06-18 15:46:46] error (api-auth): [POST] /auth/permissions/upSert → 500: 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:62:36
+
+  59 }
+  60 
+  61 async existingPermission(resource, action) {
+→ 62   return await prisma.permission.findUnique({
+         where: {
+           resource_action: {
+           ~~~~~~~~~~~~~~~
+             resource: "Guest",
+             action: "Guest"
+           },
+       ?   id?: Int,
+       ?   AND?: PermissionWhereInput | PermissionWhereInput[],
+       ?   OR?: PermissionWhereInput[],
+       ?   NOT?: PermissionWhereInput | PermissionWhereInput[],
+       ?   resource?: StringFilter | String,
+       ?   action?: StringFilter | String,
+       ?   roles?: RolePermissionListRelationFilter
+         }
+       })
+
+Unknown argument `resource_action`. Available options are marked with ?. 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:62:36
+
+  59 }
+  60 
+  61 async existingPermission(resource, action) {
+→ 62   return await prisma.permission.findUnique({
+         where: {
+           resource_action: {
+           ~~~~~~~~~~~~~~~
+             resource: "Guest",
+             action: "Guest"
+           },
+       ?   id?: Int,
+       ?   AND?: PermissionWhereInput | PermissionWhereInput[],
+       ?   OR?: PermissionWhereInput[],
+       ?   NOT?: PermissionWhereInput | PermissionWhereInput[],
+       ?   resource?: StringFilter | String,
+       ?   action?: StringFilter | String,
+       ?   roles?: RolePermissionListRelationFilter
+         }
+       })
+
+Unknown argument `resource_action`. Available options are marked with ?.
+[2025-06-18 15:47:49] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:47:55] debug (api-auth): Upserting permission: Guest - Guest ID: undefined
+[2025-06-18 15:47:55] error (api-auth): [POST] /auth/permissions/upSert → 500: 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:62:36
+
+  59 }
+  60 
+  61 async existingPermission(resource, action) {
+→ 62   return await prisma.permission.findUnique({
+         where: {
+           resource: "Guest",
+           action: "Guest",
+       ?   id?: Int,
+       ?   AND?: PermissionWhereInput | PermissionWhereInput[],
+       ?   OR?: PermissionWhereInput[],
+       ?   NOT?: PermissionWhereInput | PermissionWhereInput[],
+       ?   roles?: RolePermissionListRelationFilter
+         }
+       })
+
+Argument `where` of type PermissionWhereUniqueInput needs at least one of `id` arguments. Available options are marked with ?. 
+Invalid `prisma.permission.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:62:36
+
+  59 }
+  60 
+  61 async existingPermission(resource, action) {
+→ 62   return await prisma.permission.findUnique({
+         where: {
+           resource: "Guest",
+           action: "Guest",
+       ?   id?: Int,
+       ?   AND?: PermissionWhereInput | PermissionWhereInput[],
+       ?   OR?: PermissionWhereInput[],
+       ?   NOT?: PermissionWhereInput | PermissionWhereInput[],
+       ?   roles?: RolePermissionListRelationFilter
+         }
+       })
+
+Argument `where` of type PermissionWhereUniqueInput needs at least one of `id` arguments. Available options are marked with ?.
+[2025-06-18 15:48:37] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:48:44] debug (api-auth): Upserting permission: Guest - Guest ID: undefined
+[2025-06-18 15:54:11] error (api-auth): [POST] /auth/permissions/upSert → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-18 15:54:20] error (api-auth): [POST] /auth/permissions/upSert → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-18 15:54:45] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:54:47] debug (api-auth): Upserting permission: Guest - Guest ID: 34
+[2025-06-18 15:54:47] debug (api-auth): Updating permission with ID: 34
+[2025-06-18 15:54:48] error (api-auth): [POST] /auth/permissions/upSert → 400: Permission already exists Permission already exists
+[2025-06-18 15:55:01] debug (api-auth): Upserting permission: Guest - Guest ID: 35
+[2025-06-18 15:55:01] debug (api-auth): Updating permission with ID: 35
+[2025-06-18 15:55:01] error (api-auth): [POST] /auth/permissions/upSert → 404: Permission not found Permission not found
+[2025-06-18 15:55:05] debug (api-auth): Upserting permission: Guest - Guest ID: 34
+[2025-06-18 15:55:05] debug (api-auth): Updating permission with ID: 34
+[2025-06-18 15:55:06] error (api-auth): [POST] /auth/permissions/upSert → 400: Permission already exists Permission already exists
+[2025-06-18 15:55:27] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:58:10] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:58:36] info (api-auth): Auth Service running on port 5000
+[2025-06-18 15:59:44] debug (api-auth): Upserting permission: Guest - Guest ID: 34
+[2025-06-18 15:59:44] debug (api-auth): Updating permission with ID: 34
+[2025-06-18 15:59:45] error (api-auth): [POST] /auth/permissions/upSert → 400: The same permission The same permission
+[2025-06-18 16:05:24] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:05:48] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:14:43] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:15:00] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:15:04] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:15:13] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:15:25] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:15:31] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:15:53] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:15:55] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:16:27] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:17:51] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:18:09] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:18:21] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:18:57] error (api-auth): [DELETE] /auth/permissions/35 → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-18 16:19:09] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:34:54] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:34:58] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:35:31] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:36:56] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:37:57] error (api-auth): [DELETE] /auth/permissions/35 → 401: Not authenticated Not authenticated
+[2025-06-18 16:38:22] error (api-auth): [DELETE] /auth/permissions/:id → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-18 16:41:07] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:41:15] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:44:16] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:44:20] debug (api-auth): User ID: 45, Role ID: 5
+[2025-06-18 16:44:30] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:44:55] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:45:11] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:45:31] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:46:32] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:46:33] debug (api-auth): Checking permissions for user: 45, required: []
+[2025-06-18 16:46:33] debug (api-auth): Deleting permission with ID Controller:  35
+[2025-06-18 16:46:34] debug (api-auth): Checking if permission with ID 35 exists: false
+[2025-06-18 16:46:34] error (api-auth): [DELETE] /auth/permissions/35 → 404: Permission not found Permission not found
+[2025-06-18 16:46:40] debug (api-auth): Checking permissions for user: 45, required: []
+[2025-06-18 16:46:40] debug (api-auth): Deleting permission with ID Controller:  34
+[2025-06-18 16:46:40] debug (api-auth): Checking if permission with ID 34 exists: true
+[2025-06-18 16:50:56] info (api-auth): Auth Service running on port 5000
+[2025-06-18 16:50:58] debug (api-auth): Checking permissions for user: 45, required: []
+[2025-06-18 16:50:58] debug (api-auth): Deleting permission with ID Controller:  34
+[2025-06-18 16:50:59] debug (api-auth): Checking if permission with ID 34 exists: false
+[2025-06-18 16:50:59] error (api-auth): [DELETE] /auth/permissions/34 → 404: Permission not found Permission not found
+[2025-06-18 16:51:10] info (api-auth): Auth Service running on port 5000
+[2025-06-18 19:08:49] info (api-auth): Auth Service running on port 5000
+[2025-06-18 19:09:34] info (api-auth): Auth Service running on port 5000
+[2025-06-18 19:48:52] info (api-auth): Auth Service running on port 5000
+[2025-06-18 20:10:25] info (api-auth): Auth Service running on port 5000
+[2025-06-18 20:10:29] info (api-auth): Auth Service running on port 5000
+[2025-06-18 20:10:57] info (api-auth): Auth Service running on port 5000
+[2025-06-18 20:13:40] info (api-auth): Auth Service running on port 5000
+[2025-06-18 20:13:58] info (api-auth): Auth Service running on port 5000
+[2025-06-18 20:14:07] error (api-auth): [DELETE] /auth/permissions/34 → 500: INVALID_MIDDLEWARE_USAGE INVALID_MIDDLEWARE_USAGE
+[2025-06-18 20:14:42] info (api-auth): Auth Service running on port 5000
+[2025-06-18 20:14:53] info (api-auth): Auth Service running on port 5000
+[2025-06-18 20:15:03] info (api-auth): Auth Service running on port 5000
+[2025-06-18 20:15:59] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:17:14] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:30:02] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:30:07] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:30:11] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:30:23] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:30:28] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:36:05] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:36:08] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:36:18] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:36:21] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:36:23] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:36:53] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:37:04] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:37:09] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:37:40] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:41:31] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:42:13] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:42:21] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 13:43:01] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:43:09] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:43:14] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:45:17] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:45:42] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:45:47] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 13:45:47] error (api-auth): [POST] /auth/permissions/addToRole → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-19 13:47:12] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 13:47:12] error (api-auth): [POST] /auth/permissions/addToRole → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-19 13:47:32] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:47:36] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 13:47:36] error (api-auth): [POST] /auth/permissions/addToRole → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-19 13:48:08] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:48:13] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 13:48:13] error (api-auth): [POST] /auth/permissions/addToRole → 500: permissionId is not defined permissionId is not defined
+[2025-06-19 13:48:34] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:48:35] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 13:48:35] debug (api-auth): Adding permission with ID 1,2 to role with ID 1
+[2025-06-19 13:48:36] error (api-auth): [POST] /auth/permissions/addToRole → 500: 
+Invalid `prisma.role.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\RoleService.js:114:44
+
+  111 }
+  112 
+  113 async existingRole(name) {
+→ 114   const existingRole = await prisma.role.findUnique({
+          where: {
+            name: 1
+                  ~
+          }
+        })
+
+Argument `name`: Invalid value provided. Expected String, provided Int. 
+Invalid `prisma.role.findUnique()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\RoleService.js:114:44
+
+  111 }
+  112 
+  113 async existingRole(name) {
+→ 114   const existingRole = await prisma.role.findUnique({
+          where: {
+            name: 1
+                  ~
+          }
+        })
+
+Argument `name`: Invalid value provided. Expected String, provided Int.
+[2025-06-19 13:50:57] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:51:12] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:51:32] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:51:36] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:51:39] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:51:43] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 13:51:43] debug (api-auth): Adding permission with ID 1,2 to role with ID 1
+[2025-06-19 13:51:43] error (api-auth): [POST] /auth/permissions/addToRole → 404: Role not found Role not found
+[2025-06-19 13:51:52] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 13:53:30] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:55:01] error (api-auth): [POST] /auth/roles/upSert → 401: Not authenticated Not authenticated
+[2025-06-19 13:55:23] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 13:55:23] error (api-auth): [POST] /auth/roles/upSert → 400: Role already exists Role already exists
+[2025-06-19 13:55:31] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 13:55:31] error (api-auth): [POST] /auth/roles/upSert → 400: Role already exists Role already exists
+[2025-06-19 13:55:39] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 13:56:13] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:56:17] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 13:56:25] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 13:56:25] error (api-auth): [POST] /auth/roles/upSert → 400: Role already exists Role already exists
+[2025-06-19 13:56:25] debug (api-auth): Checking if role exists: Guest 1, Result: false
+[2025-06-19 13:56:42] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:57:42] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:57:43] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 13:57:43] debug (api-auth): [object Promise]
+[2025-06-19 13:57:43] error (api-auth): [POST] /auth/roles/upSert → 400: Role already exists Role already exists
+[2025-06-19 13:57:56] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:58:06] info (api-auth): Auth Service running on port 5000
+[2025-06-19 13:58:07] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 13:58:55] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 13:59:10] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 13:59:10] debug (api-auth): Adding permission with ID 1,2 to role with ID 22
+[2025-06-19 13:59:10] error (api-auth): [POST] /auth/permissions/addToRole → 500: 
+Invalid `prisma.permission.findFirst()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:61:56
+
+  58 }
+  59 
+  60 async existingPermission(resource, action) {
+→ 61   const existingPermission = await prisma.permission.findFirst({
+         where: {
+           resource: 1,
+                     ~
+           action: undefined
+         }
+       })
+
+Argument `resource`: Invalid value provided. Expected StringFilter or String, provided Int. 
+Invalid `prisma.permission.findFirst()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:61:56
+
+  58 }
+  59 
+  60 async existingPermission(resource, action) {
+→ 61   const existingPermission = await prisma.permission.findFirst({
+         where: {
+           resource: 1,
+                     ~
+           action: undefined
+         }
+       })
+
+Argument `resource`: Invalid value provided. Expected StringFilter or String, provided Int.
+[2025-06-19 14:05:54] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 14:07:44] info (api-auth): Auth Service running on port 5000
+[2025-06-19 14:07:48] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 14:07:56] info (api-auth): Auth Service running on port 5000
+[2025-06-19 14:08:02] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 14:08:27] info (api-auth): Auth Service running on port 5000
+[2025-06-19 14:08:29] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 14:09:42] info (api-auth): Auth Service running on port 5000
+[2025-06-19 14:09:45] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 14:09:49] info (api-auth): Auth Service running on port 5000
+[2025-06-19 14:09:51] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 14:12:15] info (api-auth): Auth Service running on port 5000
+[2025-06-19 14:12:23] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 14:12:30] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 14:12:45] info (api-auth): Auth Service running on port 5000
+[2025-06-19 14:12:46] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 14:12:46] error (api-auth): [POST] /auth/roles/upSert → 400: Role already exists Role already exists
+[2025-06-19 14:12:50] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 14:12:50] error (api-auth): [POST] /auth/roles/upSert → 400: Role already exists Role already exists
+[2025-06-19 14:12:57] info (api-auth): Auth Service running on port 5000
+[2025-06-19 14:13:34] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 14:13:34] debug (api-auth): Adding permission with ID 1,2 to role with ID 22
+[2025-06-19 14:13:35] error (api-auth): [POST] /auth/permissions/addToRole → 500: 
+Invalid `prisma.permission.findFirst()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:61:56
+
+  58 }
+  59 
+  60 async existingPermission(resource, action) {
+→ 61   const existingPermission = await prisma.permission.findFirst({
+         where: {
+           resource: 1,
+                     ~
+           action: undefined
+         }
+       })
+
+Argument `resource`: Invalid value provided. Expected StringFilter or String, provided Int. 
+Invalid `prisma.permission.findFirst()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:61:56
+
+  58 }
+  59 
+  60 async existingPermission(resource, action) {
+→ 61   const existingPermission = await prisma.permission.findFirst({
+         where: {
+           resource: 1,
+                     ~
+           action: undefined
+         }
+       })
+
+Argument `resource`: Invalid value provided. Expected StringFilter or String, provided Int.
+[2025-06-19 14:21:52] info (api-auth): Auth Service running on port 5000
+[2025-06-19 14:22:03] info (api-auth): Auth Service running on port 5000
+[2025-06-19 14:22:16] info (api-auth): Auth Service running on port 5000
+[2025-06-19 14:22:22] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 14:22:22] debug (api-auth): Adding permission with ID 1,2 to role with ID 22
+[2025-06-19 14:22:22] error (api-auth): [POST] /auth/permissions/addToRole → 404: Permission not found Permission not found
+[2025-06-19 14:28:17] error (api-auth): [GET] /auth/permissions/all → 500: 
+Invalid `prisma.permission.findMany()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:34:36
+
+  31 }
+  32 
+  33 async getAllPermissions() {
+→ 34   return await prisma.permission.findMany(
+Can't reach database server at `ep-misty-glade-a1vja2sw-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-misty-glade-a1vja2sw-pooler.ap-southeast-1.aws.neon.tech:5432`. 
+Invalid `prisma.permission.findMany()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:34:36
+
+  31 }
+  32 
+  33 async getAllPermissions() {
+→ 34   return await prisma.permission.findMany(
+Can't reach database server at `ep-misty-glade-a1vja2sw-pooler.ap-southeast-1.aws.neon.tech:5432`
+
+Please make sure your database server is running at `ep-misty-glade-a1vja2sw-pooler.ap-southeast-1.aws.neon.tech:5432`.
+[2025-06-19 14:29:30] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 14:29:30] debug (api-auth): Adding permission with ID 5,6,7 to role with ID 22
+[2025-06-19 14:30:34] error (api-auth): [DELETE] /auth/permissions/removeFromRole → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-19 14:30:37] error (api-auth): [DELETE] /auth/permissions/removeFromRole → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-19 14:30:58] info (api-auth): Auth Service running on port 5000
+[2025-06-19 14:31:02] error (api-auth): [DELETE] /auth/permissions/removeFromRole → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-19 14:31:05] error (api-auth): [DELETE] /auth/permissions/removeFromRole → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-19 14:31:26] info (api-auth): Auth Service running on port 5000
+[2025-06-19 14:31:31] info (api-auth): Auth Service running on port 5000
+[2025-06-19 14:31:32] error (api-auth): [DELETE] /auth/permissions/removeFromRole → 400: VALIDATION_ERROR VALIDATION_ERROR
+[2025-06-19 14:32:38] info (api-auth): Auth Service running on port 5000
+[2025-06-19 14:36:20] info (api-auth): Auth Service running on port 5000
+[2025-06-19 14:36:44] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 14:36:44] debug (api-auth): Removing permission with ID 5,6,7 from role with ID 22
+[2025-06-19 14:36:45] error (api-auth): [POST] /auth/permissions/removeFromRole → 500: this.existingPermission is not a function this.existingPermission is not a function
+[2025-06-19 14:37:12] info (api-auth): Auth Service running on port 5000
+[2025-06-19 14:37:49] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 14:37:49] debug (api-auth): Removing permission with ID 5,6,7 from role with ID 22
+[2025-06-19 14:37:50] error (api-auth): [POST] /auth/permissions/removeFromRole → 500: 
+Invalid `prisma.role.update()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:133:30
+
+  130 
+  131 await Promise.all(permissionIds.map((id) => this.existingPermissionById(id)));
+  132 
+→ 133 return await prisma.role.update(
+The change you are trying to make would violate the required relation 'RoleToRolePermission' between the `RolePermission` and `Role` models. 
+Invalid `prisma.role.update()` invocation in
+C:\Users\ASUS\ERP\services\auth\ERP_Auth_Service\src\services\permissionService.js:133:30
+
+  130 
+  131 await Promise.all(permissionIds.map((id) => this.existingPermissionById(id)));
+  132 
+→ 133 return await prisma.role.update(
+The change you are trying to make would violate the required relation 'RoleToRolePermission' between the `RolePermission` and `Role` models.
+[2025-06-19 15:08:10] info (api-auth): Auth Service running on port 5000
+[2025-06-19 15:08:15] info (api-auth): Auth Service running on port 5000
+[2025-06-19 15:08:21] debug (api-auth): Checking permissions for user 45 (role=5), requiredPerms=[]
+[2025-06-19 15:08:21] debug (api-auth): Removing permission with ID 5,6,7 from role with ID 22
